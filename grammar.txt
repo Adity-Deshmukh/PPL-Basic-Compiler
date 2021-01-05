@@ -1,0 +1,60 @@
+S program br_op br_cl cur_op Body cur_cl
+Body Statement Statement Statements
+Statements Statement Statements
+Statements epsilon
+Statement Declaration_statement 
+Statement Assignment_statement
+Declaration_statement Declare_single
+Declaration_statement Declare_multiple
+Declare_single Declare_single_array
+Declare_single Declare_single_primitive
+Declare_multiple Declare_multiple_primitive
+Declare_multiple Declare_multiple_array
+Declare_single_primitive declare id colon Type semicolon
+Declare_multiple_primitive declare list of variables id id Variables colon Type semicolon
+Variables id Variables
+Variables epsilon
+Type real
+Type boolean
+Type integer
+Item Array_variable
+Item id
+Item integer_literal
+Array_variable id sq_op Item Item_list sq_cl
+Item_list Item Item_list
+Item_list epsilon
+Assignment_statement Item assign_op Expression semicolon
+Expression Arithmetic_expression
+Expression Boolean_expression
+Boolean_expression  And_expression or_op Boolean_expression 
+Boolean_expression And_expression
+And_expression id and_op And_expression 
+And_expression id
+Arithmetic_expression Mul_div_expression add_op Arithmetic_expression
+Arithmetic_expression Mul_div_expression sub_op Arithmetic_expression
+Arithmetic_expression Mul_div_expression 
+Mul_div_expression Item div_op Mul_div_expression
+Mul_div_expression Item mul_op Mul_div_expression
+Mul_div_expression Item 
+Declare_multiple_array Declare_multiple_rect_array 
+Declare_multiple_array Declare_multiple_jagged_array
+Declare_single_array Declare_single_rect_array
+Declare_single_array Declare_single_jagged_array
+Declare_multiple_rect_array declare list of variables id id Variables colon Type_rect of integer semicolon
+Declare_single_rect_array declare id colon Type_rect of integer semicolon
+Type_rect array sq_op Item dot_dot Item sq_cl Other_dimensions
+Other_dimensions sq_op Item dot_dot Item sq_cl Other_dimensions
+Other_dimensions epsilon
+Declare_single_jagged_array declare id colon jagged array Declare_2D_jagged of integer semicolon Initialize_jagged
+Declare_single_jagged_array declare id colon jagged array Declare_3D_jagged of integer semicolon Initialize_jagged
+Declare_multiple_jagged_array declare list of variables id id Variables colon jagged array Declare_2D_jagged of integer semicolon Initialize_jagged
+Declare_multiple_jagged_array declare list of variables id id Variables colon jagged array Declare_3D_jagged of integer semicolon Initialize_jagged
+Declare_2D_jagged sq_op integer_literal dot_dot integer_literal sq_cl sq_op sq_cl 
+Declare_3D_jagged sq_op integer_literal dot_dot integer_literal sq_cl sq_op sq_cl sq_op sq_cl
+Initialize_jagged R1 sq_op integer_literal sq_cl colon size integer_literal colon values cur_op Initialize_jagged_values Integer_list cur_cl Initialize_terminal_jagged
+Initialize_terminal_jagged Initialize_jagged
+Initialize_terminal_jagged epsilon
+Integer_list integer_literal Integer_list
+Integer_list epsilon
+Initialize_jagged_values Integer_list semicolon Initialize_jagged_values
+Initialize_jagged_values epsilon

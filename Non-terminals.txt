@@ -1,0 +1,33 @@
+S
+Body 
+Statements
+Declaration_statement
+Declare_single 
+Declare_multiple
+Declare_single_primitive
+Declare_multiple_primitive
+Variables
+Type
+Item
+Array_variable 
+Item_list
+Assignment_statement
+Expression
+Boolean_expression 
+And_expression
+Arithmetic_expression
+Mul_div_expression 
+Declare_multiple_array
+Declare_single_array
+Declare_multiple_rect_array
+Declare_single_rect_array 
+Type_rect
+Other_dimensions
+Declare_single_jagged_array
+Declare_multiple_jagged_array
+Declare_2D_jagged sq_op
+Declare_3D_jagged sq_op
+Initialize_jagged 
+Initialize_terminal_jagged 
+Integer_list
+Initialize_jagged_values

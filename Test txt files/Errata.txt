@@ -1,0 +1,24 @@
+The test cases uploaded earlier have minor modifications as given below. 
+
+Test case t1.txt: 
+	Line 9: Add a + in between w and 76875 giving one blank in between w and + and another blank in between + and 76875.
+
+Test case t2.txt: 
+	Line 10: Add a +  between w and 76875 as is given for t1.txt
+	Line 14: Add Add a space between ssd_2_3 and ;
+
+Test case t3.txt: 
+	Lines 11 and 15: make similar changes as above
+
+Test case t4.txt: 
+	Lines 18 and 23: make similar changes as above
+
+Test case t5.txt: 
+	Line 19: add a blank in between 11 and ; given in the description of R1 [ 5 ] 
+	Lines 23 and 29 : same changes as in t2.txt appropriately
+
+Test case t6.txt: 
+	Line 30: add a blank in between 11 and ; given in the description of R1 [ 5 ] 
+	Line 34: Add a + as above between  w and 76875 
+
+A particular minus looking symbol should be replaced by exact minus anywhere it is appearing in the test cases.
